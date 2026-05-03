@@ -1,0 +1,23 @@
+.markdown-body p {
+  color: inherit !important;
+  margin-bottom: 0.5rem;
+}
+.markdown-body strong {
+  font-weight: 700;
+  color: inherit;
+}
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.markdown-body li {
+  color: inherit !important;
+  margin-bottom: 0.2rem;
+}
+.markdown-body h3, .markdown-body h4 {
+  color: inherit;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.1em;
+  font-weight: 600;
+}

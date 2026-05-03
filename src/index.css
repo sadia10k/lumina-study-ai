@@ -1,0 +1,139 @@
+:root {
+  /* Color Palette - Clean Flat Light UI */
+  --bg-dark: #1E293B;         /* Slate 800 - Used for Sidebar */
+  --bg-gradient: #F3F4F6;     /* Gray 100 - Used for Main App Body */
+  --accent: #2563EB;          /* Blue 600 - Primary Brand Color */
+  --accent-glow: transparent; 
+  --accent-hover: #1D4ED8;    /* Blue 700 */
+  
+  --glass-bg: #F0F4F8;        /* Soft, cool slate off-white instead of pure blinding white */
+  --glass-border: #E2E8F0;    /* Slate 200 */
+  --glass-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  /* Text */
+  --text-primary: #1F2937;    /* Gray 800 */
+  --text-secondary: #4B5563;  /* Gray 600 */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Utilities (Converted to Flat Panels) */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 12px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Modern Inputs / Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.glow-btn {
+  background: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.glow-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.modern-input {
+  background: #FFFFFF;
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.modern-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Layout Hierarchy */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Markdown styling shared from previous projects */
+.markdown-body h1, .markdown-body h2 {
+  color: var(--text-primary);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.markdown-body p, .markdown-body li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Quiz Option Buttons */
+.quiz-option {
+  border: 2px solid var(--glass-border) !important;
+  background: #FFFFFF !important;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled) {
+  background: #EFF6FF !important; /* Tailwind Blue 50 */
+  border-color: var(--accent) !important;
+}
+
+.quiz-option.correct {
+  background: #DCFCE7 !important; 
+  border-color: #22C55E !important; 
+}
+
+.quiz-option.incorrect {
+  background: #FEE2E2 !important; 
+  border-color: #EF4444 !important; 
+}
+
+@keyframes flipHourglass {
+  0%, 20% { transform: rotate(0deg); }
+  80%, 100% { transform: rotate(180deg); }
+}
+
+.hourglass-spin {
+  display: inline-block;
+  animation: flipHourglass 2s ease-in-out infinite alternate;
+}
