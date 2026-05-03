@@ -12,6 +12,9 @@ Lumina Study AI is an intelligent, React-based web application that leverages th
 ## Public URL (CodeSandbox)
 https://cv2gdj-5173.csb.app/
 
+## Known Bugs
+There's a bug affecting pdf text parsing in Safari browser. Please use Google Chrome or other browsers.
+
 ## Technologies Used
 
 - [React 19](https://react.dev/)
