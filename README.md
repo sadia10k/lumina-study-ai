@@ -2,14 +2,17 @@
 
 Lumina Study AI is an intelligent, React-based web application that leverages the power of Google's Gemini API to act as your personal study assistant. With capabilities for document extraction (PDFs) and rich text interactions, it helps students and professionals interact with their study materials efficiently.
 
-## 🚀 Features
+## Features
 
 - **AI-Powered Assistance**: Utilize Google's advanced Gemini API to ask questions, summarize content, and get study help.
 - **Document Extraction**: Seamlessly upload and extract text from PDFs using `pdfjs-dist`.
 - **Rich Text Rendering**: Responses are parsed and beautifully rendered with `marked`.
 - **Modern Tech Stack**: Built with React 19 and Vite for blazing-fast development and optimized production builds.
 
-## 🛠️ Technologies Used
+## Public URL (CodeSandbox)
+https://cv2gdj-5173.csb.app/
+
+## Technologies Used
 
 - [React 19](https://react.dev/)
 - [Vite](https://vitejs.dev/)
@@ -17,7 +20,7 @@ Lumina Study AI is an intelligent, React-based web application that leverages th
 - [PDF.js](https://mozilla.github.io/pdf.js/)
 - [Marked](https://marked.js.org/)
 
-## 📦 Local Setup
+## Local Setup
 
 1. **Clone the repository:**
    ```bash
@@ -41,11 +44,8 @@ Lumina Study AI is an intelligent, React-based web application that leverages th
    npm run dev
    ```
 
-## 🌐 Deployment
+## Deployment
 
 ### GitHub
 The repository is hosted on GitHub: [sadia10k/lumina-study-ai](https://github.com/sadia10k/lumina-study-ai)
 
-### CodeSandbox
-You can quickly preview and edit this project in the browser using CodeSandbox:
-[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/sadia10k/lumina-study-ai)
