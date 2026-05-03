@@ -1,4 +1,4 @@
-# Lumina Study AI 🧠✨
+# Lumina Study AI
 
 Lumina Study AI is an intelligent, React-based web application that leverages the power of Google's Gemini API to act as your personal study assistant. With capabilities for document extraction (PDFs) and rich text interactions, it helps students and professionals interact with their study materials efficiently.
 
