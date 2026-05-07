@@ -10,7 +10,7 @@ Lumina Study AI is an intelligent, React-based web application that leverages th
 - **Modern Tech Stack**: Built with React 19 and Vite for blazing-fast development and optimized production builds.
 
 ## Public URL (CodeSandbox)
-https://cv2gdj-5173.csb.app/
+https://workspace-smoky-eight-41.vercel.app/ 
 
 ## Known Bugs
 There's a bug affecting pdf text parsing in Safari browser. Please use Google Chrome or other browsers.
